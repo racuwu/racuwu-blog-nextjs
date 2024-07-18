@@ -1,0 +1,20 @@
+{
+  "name": "racuwu-blog",
+  "plugins": [
+    {
+      "name": "TailwindCSS",
+      "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
+      "url": "https://tailwindcss.com/docs"
+    },
+    {
+      "name": "CSS / styled-jsx",
+      "description": "Next.js comes with built-in support for CSS and styled-jsx. Styled-jsx is full, scoped and component-friendly CSS support for JSX (rendered on the server or the client).",
+      "url": "https://github.com/vercel/styled-jsx"
+    },
+    {
+      "name": "Fetch",
+      "description": "Next.js has a built-in polyfill for the fetch API. You don't need to worry about using it on either server or client side.",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+    }
+  ]
+}
