@@ -20,7 +20,7 @@ export default function PostGrid({ tag }: { tag: number }) {
   }, [tag]);
 
   return (
-    <Container><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8 md:px-8">
+    <Container><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-1 my-8 md:px-1 mx-2">
     {posts && posts.data.map(post => (
       <PostCard key={post.id} post={post} />
     ))}

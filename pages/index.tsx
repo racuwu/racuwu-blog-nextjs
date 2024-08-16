@@ -19,14 +19,14 @@ function Page({ homeData }: { homeData: HomeData; }) {
       <NextSeo
         title="Blog - Rotaract Club of Uva Wellassa University - Badulla"
         description="We are a professional voluntary movement that focuses on six avenues: Community Service, Club Service, Professional Development, International Service, Public"
-        canonical="https://blog.racuwu.com/"
+        canonical="https://read.racuwu.com/"
         openGraph={{
-          url: 'https://blog.racuwu.com',
+          url: 'https://read.racuwu.com',
           title: 'Blog - Rotaract Club of Uva Wellassa University - Badulla',
           description: 'We are a professional voluntary movement that focuses on six avenues: Community Service, Club Service, Professional Development, International Service, Public'
         }}
       />
-      <SearchJumbo title={"Blog"} />
+      {/* <SearchJumbo title={"Blog"} /> */}
       <div className='mt-12'></div>
       <FeaturedPost post={homeData.featured[0]} />
       <TagList setSelectedTag={tag => setSelectedTag(tag)} tags={homeData.tags} selectedTag={selectedTag} />

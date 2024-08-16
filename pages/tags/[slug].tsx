@@ -15,7 +15,7 @@ export const getServerSideProps: GetServerSideProps<{ posts: PaginatedPosts }> =
     const res = await fetch(`https://blog.racuwu.com/api-backend/api/tags/posts/${slug}?per_page=10&page=1&q=${slug}`);
     const posts = await res.json();
 
-    return { props: { posts } };
+    return { props: { posts, slug } };
   } catch (error) {
     console.error('Error fetching data:', error);
     return { props: { posts: null } };
